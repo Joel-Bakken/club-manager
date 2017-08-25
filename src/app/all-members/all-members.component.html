@@ -1,3 +1,7 @@
-<p>
-  all-members works!
-</p>
+<h2>All Members</h2>
+
+<div *ngFor="let member of members" (click)="goToDetailPage(member)" class="panel panel-default">
+  <div class="panel-body">
+    <h3>Name: <em>{{member.name}}</em> | Age: {{member.age}}</h3>
+  </div>
+</div>
