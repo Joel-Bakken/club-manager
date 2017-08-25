@@ -5,11 +5,21 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
+import { AllMembersComponent } from './all-members/all-members.component';
+import { AdminComponent } from './admin/admin.component';
+import { MemberDetailComponent } from './member-detail/member-detail.component';
+import { EditMemberComponent } from './edit-member/edit-member.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    AllMembersComponent,
+    AdminComponent,
+    MemberDetailComponent,
+    EditMemberComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
