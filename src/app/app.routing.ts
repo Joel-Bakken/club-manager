@@ -11,12 +11,10 @@ const appRoutes: Routes = [
     path: '',
     component: WelcomeComponent
   },
-
   {
     path: 'about',
     component: AboutComponent
   },
-
   {
     path: 'all-members',
     component: AllMembersComponent
@@ -29,7 +27,6 @@ const appRoutes: Routes = [
     path: 'admin',
     component: AdminComponent
   },
-
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
