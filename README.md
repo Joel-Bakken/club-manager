@@ -26,3 +26,10 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Plans for this project:
+* 1) Make a page that will have a welcome page with a nav bar at the top with links to other pages.
+* 2) The page with the list of teammates will have a list of their names, ages, specialities, years of experience, etc.
+* 3) Make an 'about us' page that is filled with Lorem ipsum text.
+* 4) Host the teammate info in a firebase database.
+* 5) Make an administrator page with the ability to edit anything.
