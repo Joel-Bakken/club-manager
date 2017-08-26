@@ -1,3 +1,20 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add a new member to the team</h3>
+  </div>
+    <div>
+      <div>
+        <label>Name:</label><input #newName>
+      </div>
+      <div>
+        <label>Age:</label><input #newAge type="number">
+      </div>
+      <div>
+        <label>Specialities:</label><textarea #newSpecialities></textarea>
+      </div>
+      <div>
+        <label>Years of experience:</label><input #newExperience type="number">
+      </div>
+      <button (click)="submitForm(newName.value, newAge.value, newSpecialities.value, newExperience.value); newName.value=''; newAge.value=''; newSpecialities.value=''; newExperience.value=''">Add</button>
+    </div>
+</div>

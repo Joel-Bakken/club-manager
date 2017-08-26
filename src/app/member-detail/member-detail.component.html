@@ -1,5 +1,5 @@
 <div>
-  <h3>Name: {{memberToDisplay.name}}</h3>
-  <h4>Age: {{memberToDisplay.age}}</h4>
-  <h5>Specialities: {{memberToDisplay.specialities}}</h5>
-  <h6>Years of experience: {{memberToDisplay.experience}}</h6>
+  <h3>Name: {{memberToDisplay | async).name}}</h3>
+  <h4>Age: {{memberToDisplay | async).age}}</h4>
+  <h5>Specialities: {{memberToDisplay | async).specialities}}</h5>
+  <h6>Years of experience: {{memberToDisplay | async).experience}}</h6>

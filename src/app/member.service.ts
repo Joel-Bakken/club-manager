@@ -3,6 +3,7 @@ import { Member } from './member.model';
 import { MEMBERS } from './mock-members';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
+
 @Injectable()
 export class MemberService {
   members: FirebaseListObservable<any[]>;
@@ -15,12 +16,12 @@ export class MemberService {
     return this.members;
   }
 
+  addMember(newMember: Member) {
+    this.members.push(newMember);
+  }
+
   getMemberById(memberId: number){
-    for (var i = 0; i <= MEMBERS.length - 1; i++) {
-      if (MEMBERS[i].id === memberId) {
-        return MEMBERS[i];
-      }
-    }
+    return this.database.object('members/' + memberId);
   } //end of getMemberById method
 
 } //end of export class MemberService
