@@ -11,6 +11,16 @@ import { AdminComponent } from './admin/admin.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { EditMemberComponent } from './edit-member/edit-member.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { masterFirebaseConfig } from './api-keys';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -26,7 +36,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
