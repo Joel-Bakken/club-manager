@@ -22,7 +22,7 @@ export class AllMembersComponent implements OnInit {
     this.members = this.memberService.getMembers();
   }
 
-  goToDetailPage(clickedMember: Member) {
+  goToDetailPage(clickedMember) {
     this.router.navigate(['members', clickedMember.$key]);
   };
 

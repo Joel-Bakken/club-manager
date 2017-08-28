@@ -11,9 +11,9 @@ import { AdminComponent } from './admin/admin.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { EditMemberComponent } from './edit-member/edit-member.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { masterFirebaseConfig } from './api-keys';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
