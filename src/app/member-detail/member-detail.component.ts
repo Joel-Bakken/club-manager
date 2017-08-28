@@ -14,7 +14,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 })
 
 export class MemberDetailComponent implements OnInit {
-  memberId: number;
+  memberId: string;
   memberToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private memberService: MemberService) { }
