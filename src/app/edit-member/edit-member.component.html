@@ -12,6 +12,6 @@
 <label>New Member Years of Experience:</label>
 <input [(ngModel)]="selectedMember.experience">
 <hr>
-<button (click)="beginUpdatingMember(selectedMember)">Update</button>
+<button id="update" (click)="beginUpdatingMember(selectedMember)">Update</button>
 <hr>
-<button (click)="beginDeletingMember(selectedMember)">Delete</button>
+<button id="delete" (click)="beginDeletingMember(selectedMember)">Delete</button>
